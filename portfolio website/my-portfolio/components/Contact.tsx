@@ -4,26 +4,21 @@ import { motion } from "framer-motion"
 
 const links = [
   {
-    label: "github",
-    value: "github.com/yourhandle",
-    href: "https://github.com/yourhandle",
-  },
-  {
     label: "linkedin",
-    value: "linkedin.com/in/yourhandle",
-    href: "https://linkedin.com/in/yourhandle",
+    value: "linkedin.com/in/tan-yu-hng",
+    href: "https://www.linkedin.com/in/tan-yu-hng-077000306/",
   },
   {
     label: "email",
-    value: "you@email.com",
-    href: "mailto:you@email.com",
+    value: "yuhng1@email.com",
+    href: "yuhng1@hotmail.com",
   },
 ]
 
 export default function Contact() {
   return (
     <section className="px-8 py-16">
-      <p className="font-mono text-accent text-xs tracking-widest mb-2">05 / contact</p>
+      <p className="font-mono text-accent text-xs tracking-widest mb-2">03 / contact</p>
       <h2 className="text-2xl font-extrabold text-text mb-2">Get in touch</h2>
       <p className="font-mono text-muted text-sm mb-10">
         Open to new roles and interesting data problems.

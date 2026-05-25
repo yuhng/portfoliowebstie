@@ -28,7 +28,7 @@ const skillGroups = [
 export default function Skills() {
   return (
     <section className="px-8 py-16">
-      <p className="font-mono text-accent text-xs tracking-widest mb-2">03 / skills</p>
+      <p className="font-mono text-accent text-xs tracking-widest mb-2">02 / skills</p>
       <h2 className="text-2xl font-extrabold text-text mb-8">Tech stack</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
