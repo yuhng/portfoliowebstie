@@ -8,16 +8,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#0a0a0f",
-        surface: "#111118",
-        border: "#1e1e2e",
-        accent: "#7c6af7",
-        muted: "#4a4a6a",
-        text: "#e2e2f0",
+        bg: "#050505",
+        surface: "#0f0f0f",
+        border: "#1a1a1a",
+        accent: "#ff3c3c",
+        muted: "#444444",
+        text: "#e8e8e8",
       },
       fontFamily: {
-        mono: ["JetBrains Mono", "monospace"],
-        sans: ["Syne", "sans-serif"],
+        display: ["Bebas Neue", "sans-serif"],
+        mono: ["Share Tech Mono", "monospace"],
+        sans: ["Share Tech Mono", "monospace"],
+      },
+      borderRadius: {
+        none: "0px",
+        sm: "0px",
+        md: "0px",
+        lg: "0px",
+        xl: "0px",
+        "2xl": "0px",
       },
     },
   },
