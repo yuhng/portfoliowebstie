@@ -15,7 +15,7 @@ const experiences = [
     role: "Data Intelligence Analyst Intern",
     company: "Publicis Groupe",
     period: "January 26 —  June 26",
-    description: "Advertising Analytics Solutions for APAC PepsiCo & Samsung",
+    description: "Advertising Analytics solutions for APAC PepsiCo & Samsung",
     tags: ["Python", "BigQuery", "GCS", "Data Studio"],
   },
   {

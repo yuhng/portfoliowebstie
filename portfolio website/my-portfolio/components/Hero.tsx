@@ -12,7 +12,7 @@ export default function Hero() {
         Bsc (Honors) Data Science and Business Analytics 
       </h2>
       <p className="font-mono text-sm text-muted mt-6 max-w-md">
-        Hello! I am Isaac, someone who always chases the "Whys" and "Hows" in every problem.
+        Hello! I am Isaac, someone who always chasing the "Whys" and "Hows" in every problem.
         When I'm not on the grind, you'll see me as a Barista or Powerlifter!
       </p>
     </section>
