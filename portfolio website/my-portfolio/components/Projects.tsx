@@ -25,7 +25,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="px-8 py-16">
+    <section className="px-8 py-16 max-w-6xl mx-auto">
       <p className="font-mono text-accent text-xs tracking-widest mb-2">02 / projects</p>
       <h2 className="text-2xl font-extrabold text-text mb-8">Featured work</h2>
 
@@ -37,26 +37,36 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             viewport={{ once: true }}
-            className="bg-surface border border-border rounded-xl p-5"
+            className="bg-surface border border-border rounded-xl p-5 flex flex-col justify-between hover:border-accent/40 transition-colors duration-300 group"
           >
-            <h3 className="text-text font-bold mb-2">{project.title}</h3>
-            <p className="font-mono text-muted text-xs leading-relaxed mb-4">{project.description}</p>
+            <div>
+              <h3 className="text-text font-bold mb-2 group-hover:text-accent transition-colors duration-300">
+                {project.title}
+              </h3>
+              <p className="font-mono text-muted text-xs leading-relaxed mb-4">
+                {project.description}
+              </p>
 
-            <div className="flex flex-wrap gap-2 mb-4">
-              {project.tags.map((tag) => (
-                <span key={tag} className="font-mono text-xs text-accent bg-bg border border-border px-2 py-1 rounded">
-                  {tag}
-                </span>
-              ))}
+              <div className="flex flex-wrap gap-2 mb-6">
+                {project.tags.map((tag) => (
+                  <span 
+                    key={tag} 
+                    className="font-mono text-[10px] text-accent bg-bg border border-border px-2 py-0.5 rounded"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
 
-            
+            {/* FIXED: Re-added the missing opening anchor tag safely */}
+            <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-xs text-accent hover:underline"
+              className="font-mono text-xs text-accent hover:text-text inline-flex items-center gap-1 transition-colors duration-200 mt-auto w-fit"
             >
-              view on github →
+              view on github <span className="transform group-hover:translate-x-1 transition-transform duration-200">→</span>
             </a>
           </motion.div>
         ))}
