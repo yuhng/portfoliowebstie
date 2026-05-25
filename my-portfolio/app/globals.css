@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brutalist & Cyberpunk Palette */
+  --color-bg: #050505;
+  --color-surface: #0f0f0f;
+  --color-border: #1a1a1a;
+  --color-accent: #ff3c3c;
+  --color-muted: #444444;
+  --color-text: #e8e8e8;
+
+  /* Typography Engine */
+  --font-display: "Bebas Neue", sans-serif;
+  --font-mono: "Share Tech Mono", monospace;
+  --font-sans: "Share Tech Mono", monospace;
+
+  /* Strict Border Radius Override (Zeroed for Sharp Brutalism) */
+  --radius-none: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+}
+
+/* Base Level Document Overrides */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Selection Highlight to Match Your Crimson Accent */
+::selection {
+  background-color: rgba(255, 60, 60, 0.2);
+  color: var(--color-text);
+}
