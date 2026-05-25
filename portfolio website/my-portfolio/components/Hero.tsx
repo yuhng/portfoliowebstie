@@ -6,7 +6,7 @@ export default function Hero() {
 
       <p className="font-mono text-accent text-sm mb-4">// hello world</p>
       <h1 className="font-sans text-6xl font-extrabold text-text">
-        Your Name
+        Tan Yu Hng, Isaac
       </h1>
       <h2 className="font-sans text-2xl text-muted mt-2">
         Data Engineer
