@@ -4,24 +4,24 @@ import { motion } from "framer-motion"
 
 const skillGroups = [
   {
-    category: "ingestion",
-    skills: ["Kafka", "Airbyte", "Fivetran"],
+    category: "Programming",
+    skills: ["Python: Pandas, Polars, PySpark", "SQL: Postgres, BigQuery, MySQL", "Git"],
   },
   {
-    category: "transformation",
-    skills: ["dbt", "Spark", "Python", "SQL"],
+    category: "Data Visualization",
+    skills: ["Tableau", "PowerBI", "Data Studio"],
   },
   {
-    category: "orchestration",
-    skills: ["Airflow", "Prefect"],
+    category: "Transformation",
+    skills: ["Informatica", "Dbt"],
   },
   {
-    category: "storage",
-    skills: ["Snowflake", "BigQuery", "Postgres", "S3"],
+    category: "AI/ML Frameworks",
+    skills: ["Scikit-Learn", "LangChain"],
   },
   {
-    category: "infra",
-    skills: ["Terraform", "Docker", "GitHub Actions"],
+    category: "Cloud Platforms",
+    skills: ["AWS", "GCP", "Azure", "Databricks"],
   },
 ]
 
