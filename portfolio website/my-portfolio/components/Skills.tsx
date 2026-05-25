@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const skillGroups = [
   {
     category: "Programming",
-    skills: ["Python: Pandas, Polars, PySpark", "SQL: Postgres, BigQuery, MySQL", "Git"],
+    skills: ["Python: Pandas, Polars, PySpark", "SQL: Postgres, BigQuery, MySQL"],
   },
   {
     category: "Data Visualization",
