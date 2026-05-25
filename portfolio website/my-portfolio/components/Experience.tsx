@@ -5,25 +5,32 @@ import { motion } from "framer-motion"
 // TODO: Replace "Company Name" and descriptions with your actual internship data
 const experiences = [
   {
-    role: "Senior Data Engineer",
-    company: "Company Name",
-    period: "2023 — present",
-    description: "Built and maintained real-time data pipelines processing millions of events daily. Led migration from legacy ETL to a modern dbt + Snowflake stack.",
-    tags: ["Kafka", "dbt", "Snowflake", "Airflow"],
+    role: "Data Engineer Intern",
+    company: "Munich Re",
+    period: "Jun 26 — present",
+    description: "ML & Analytics in Actuarial Science",
+    tags: ["Azure", "Databricks", "PySpark", "SQL", "PowerBI"],
   },
   {
-    role: "Data Engineer",
-    company: "Company Name",
-    period: "2021 — 2023",
-    description: "Designed ingestion pipelines for 15+ data sources. Reduced pipeline failure rate by 40% through improved monitoring and alerting.",
-    tags: ["Python", "Spark", "AWS", "Postgres"],
+    role: "Data Intelligence Analyst Intern",
+    company: "Publicis Groupe",
+    period: "Jan 26 —  Jun 26",
+    description: "Advertising Analytics Solutions for APAC PepsiCo & Samsung",
+    tags: ["Python", "BigQuery", "GCS", "Data Studio"],
   },
   {
-    role: "Data Analyst",
-    company: "Company Name",
-    period: "2019 — 2021",
-    description: "Transitioned from analytics into engineering. Built self-serve dashboards and wrote complex SQL transformations for business reporting.",
-    tags: ["SQL", "Python", "Tableau"],
+    role: "EA Data Analyst Intern",
+    company: "Schneider Electric",
+    period: "Jun 25 — Dec 25",
+    description: "Data Governance Analytics for East Asia Data Office",
+    tags: ["Python", "PostgreSQL", "Tableau"],
+  },
+  {
+    role: "Data Analyst Intern",
+    company: "Aspial Corporation",
+    period: "Jul 24 — Nov 24",
+    description: "Retail & Pawn Analytics for LeeHwa, GoldHeart & Maxi-Cash",
+    tags: ["BigQuery", "PostgreSQL", "Tableau", "PowerBI"],
   },
 ]
 
