@@ -18,7 +18,7 @@ const links = [
 
 export default function Contact() {
   return (
-    <section className="px-8 py-16 relative overflow-hidden">
+    <section id="contact" className="px-8 py-16 relative overflow-hidden">
       <TopologyBackground nodeCount={30} maxEdgeAlpha={0.15} speedMultiplier={0.6} />
       <p className="font-mono text-accent text-xs tracking-widest mb-2">04 / contact</p>
       <h2 className="text-2xl font-extrabold text-text mb-2">There's more! Get in touch</h2>

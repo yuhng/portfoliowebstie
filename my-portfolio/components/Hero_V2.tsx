@@ -143,7 +143,7 @@ export default function Hero() {
   return (
     // h-screen + min-h-screen: locks hero to exactly one viewport height
     // overflow-hidden: keeps the canvas from bleeding out
-    <section className="h-screen min-h-screen flex flex-col justify-center px-8 relative overflow-hidden bg-bg">
+    <section id="about" className="h-screen min-h-screen flex flex-col justify-center px-8 relative overflow-hidden bg-bg">
 
       {/* Canvas is absolute so it never contributes to layout height */}
       <canvas

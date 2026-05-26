@@ -176,7 +176,7 @@ export default function ExtracurricularActivities() {
         - NO overflow-hidden on the section — would clip ::after accent lines
           and the translateX(-14px) card entrance animation
       */}
-      <section className="px-8 py-20 max-w-4xl mx-auto w-full relative bg-bg">
+      <section id="beyond" className="px-8 py-20 max-w-4xl mx-auto w-full relative bg-bg">
 
         {/*
           Canvas isolated in its own overflow-hidden div.

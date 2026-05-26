@@ -171,7 +171,7 @@ export default function Experience() {
         - NO overflow-hidden on the section itself — that would clip
           the card slide-in animation and the ::before accent lines
       */}
-      <section className="px-8 py-20 max-w-4xl mx-auto w-full relative bg-bg">
+      <section id="experience" className="px-8 py-20 max-w-4xl mx-auto w-full relative bg-bg">
 
         {/*
           Canvas is isolated in its own overflow-hidden wrapper.
