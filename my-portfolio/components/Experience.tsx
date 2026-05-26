@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import TopologyBackground from "@/components/TopologyBackground"
 
 const experiences = [
   {
@@ -36,7 +35,81 @@ const experiences = [
 
 export default function Experience() {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([])
+  const canvasRef = useRef<HTMLCanvasElement>(null)
 
+  // ── Topology Mesh background ──────────────────────────────────────────────
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext("2d")
+    if (!ctx) return
+
+    let animId: number
+    const NODE_COUNT = 28
+    const CONNECT_DIST = 120
+    const ACCENT = "255,60,60"
+    const MAX_ALPHA = 0.18
+
+    type Node = { x: number; y: number; vx: number; vy: number; r: number }
+    let nodes: Node[] = []
+
+    const init = () => {
+      canvas.width = canvas.offsetWidth
+      canvas.height = canvas.offsetHeight
+      nodes = Array.from({ length: NODE_COUNT }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.45 * 0.5,
+        vy: (Math.random() - 0.5) * 0.45 * 0.5,
+        r: Math.random() > 0.85 ? 2.5 : 1.2,
+      }))
+    }
+
+    const draw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      nodes.forEach((n) => {
+        n.x += n.vx
+        n.y += n.vy
+        if (n.x < 0 || n.x > canvas.width) n.vx *= -1
+        if (n.y < 0 || n.y > canvas.height) n.vy *= -1
+      })
+      for (let i = 0; i < NODE_COUNT; i++) {
+        for (let j = i + 1; j < NODE_COUNT; j++) {
+          const a = nodes[i], b = nodes[j]
+          const d = Math.hypot(a.x - b.x, a.y - b.y)
+          if (d < CONNECT_DIST) {
+            const alpha = (1 - d / CONNECT_DIST) * MAX_ALPHA
+            ctx.strokeStyle = `rgba(${ACCENT},${alpha})`
+            ctx.lineWidth = 0.5
+            ctx.beginPath()
+            ctx.moveTo(a.x, a.y)
+            ctx.lineTo(b.x, b.y)
+            ctx.stroke()
+          }
+        }
+      }
+      nodes.forEach((n) => {
+        ctx.fillStyle = n.r > 2
+          ? `rgba(${ACCENT},${MAX_ALPHA * 2})`
+          : `rgba(${ACCENT},${MAX_ALPHA * 0.9})`
+        ctx.beginPath()
+        ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2)
+        ctx.fill()
+      })
+      animId = requestAnimationFrame(draw)
+    }
+
+    init()
+    draw()
+    const onResize = () => init()
+    window.addEventListener("resize", onResize)
+    return () => {
+      cancelAnimationFrame(animId)
+      window.removeEventListener("resize", onResize)
+    }
+  }, [])
+
+  // ── Card entrance animations ──────────────────────────────────────────────
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -92,12 +165,26 @@ export default function Experience() {
         }
       `}</style>
 
-    <section className="px-8 py-20 max-w-4xl mx-auto w-full relative overflow-hidden">
-      <TopologyBackground nodeCount={28} maxEdgeAlpha={0.18} speedMultiplier={0.5} />
-        <p className="font-mono text-accent text-xs tracking-widest mb-2">01 / experience</p>
-        <h2 className="text-2xl font-extrabold text-text mb-8">Where I&apos;ve worked</h2>
+      {/*
+        - relative: lets the canvas position absolutely inside
+        - bg-bg: solid background so hero doesn't show through
+        - NO overflow-hidden on the section itself — that would clip
+          the card slide-in animation and the ::before accent lines
+      */}
+      <section className="px-8 py-20 max-w-4xl mx-auto w-full relative bg-bg">
 
-        <div className="flex flex-col gap-4">
+        {/*
+          Canvas is isolated in its own overflow-hidden wrapper.
+          This clips the canvas without affecting card animations.
+        */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+          <canvas ref={canvasRef} className="w-full h-full" />
+        </div>
+
+        <p className="font-mono text-accent text-xs tracking-widest mb-2 relative">01 / experience</p>
+        <h2 className="text-2xl font-extrabold text-text mb-8 relative">Where I&apos;ve worked</h2>
+
+        <div className="flex flex-col gap-4 relative">
           {experiences.map((exp, i) => (
             <div
               key={i}
@@ -105,12 +192,10 @@ export default function Experience() {
               data-idx={i}
               className="exp-card bg-surface border border-border p-6 flex flex-col md:flex-row md:items-start gap-4 transition-colors duration-300"
             >
-              {/* Left — period */}
               <div className="md:w-36 shrink-0">
                 <p className="font-mono text-xs text-muted md:pt-1">{exp.period}</p>
               </div>
 
-              {/* Right — content */}
               <div className="flex-1">
                 <h3 className="text-text font-bold text-base mb-0.5">{exp.role}</h3>
                 <p className="font-mono text-accent text-xs mb-3">{exp.company}</p>
