@@ -94,7 +94,7 @@ export default function Hero() {
         ref={subtitleRef}
         className="font-sans text-xl md:text-2xl text-muted mt-2 relative opacity-0 translate-y-2 transition-all duration-500 ease-out"
       >
-        BSc (Honours) Data Science and Business Analytics
+        BSc (Honours) Data Science and Business Analytics, UOL-LSE
       </h2>
 
       {/* React Fragment grouping text nodes to resolve adjacent block compilation issues */}
