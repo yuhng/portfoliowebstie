@@ -33,7 +33,7 @@ const activities = [
 ]
 
 const typeLabel: Record<string, string> = {
-  campus: "// passion",
+  passion: "// passion",
   craft: "// craft",
   service: "// service",
 }
