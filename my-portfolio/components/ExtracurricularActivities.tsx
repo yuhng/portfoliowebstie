@@ -95,7 +95,7 @@ export default function ExtracurricularActivities() {
 
       <section className="px-8 py-20 max-w-4xl mx-auto w-full">
         <p className="font-mono text-accent text-xs tracking-widest mb-2">
-          02.5 / beyond the desk
+          02 / beyond the desk
         </p>
         <h2 className="text-2xl font-extrabold text-text mb-8">
           Outside the grind
