@@ -48,7 +48,7 @@ export default function Experience() {
     const NODE_COUNT = 28
     const CONNECT_DIST = 120
     const ACCENT = "255,60,60"
-    const MAX_ALPHA = 0.18
+    const MAX_ALPHA = 0.30
 
     type Node = { x: number; y: number; vx: number; vy: number; r: number }
     let nodes: Node[] = []

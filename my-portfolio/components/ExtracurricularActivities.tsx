@@ -53,7 +53,7 @@ export default function ExtracurricularActivities() {
     const NODE_COUNT = 25
     const CONNECT_DIST = 120
     const ACCENT = "255,60,60"
-    const MAX_ALPHA = 0.16
+    const MAX_ALPHA = 0.20
 
     type Node = { x: number; y: number; vx: number; vy: number; r: number }
     let nodes: Node[] = []
