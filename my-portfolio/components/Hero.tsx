@@ -9,7 +9,7 @@ export default function Hero() {
   const bioRef = useRef<HTMLParagraphElement>(null)
 
   useEffect(() => {
-    const name = "Isaac, Yu Hng Tan"
+    const name = "Isaac Tan"
     const el = nameRef.current
     if (!el) return
 
