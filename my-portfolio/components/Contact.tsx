@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <section className="px-8 py-16">
       <p className="font-mono text-accent text-xs tracking-widest mb-2">04 / contact</p>
-      <h2 className="text-2xl font-extrabold text-text mb-2">Get in touch</h2>
+      <h2 className="text-2xl font-extrabold text-text mb-2">There's more! Get in touch</h2>
       <p className="font-mono text-muted text-sm mb-10">
         Open to new roles and interesting data problems.
       </p>

@@ -6,7 +6,7 @@ const experiences = [
   {
     role: "Data Engineer Intern",
     company: "Munich Re",
-    period: "June 26 — present",
+    period: "June 26 — Present",
     description: "ML & Analytics in Actuarial Science",
     tags: ["Azure", "Databricks", "PySpark", "SQL", "PowerBI"],
   },

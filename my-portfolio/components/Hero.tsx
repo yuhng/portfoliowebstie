@@ -108,7 +108,7 @@ export default function Hero() {
         </p>
         
         <p className="font-mono text-xs text-accent mt-4 italic relative">
-          // when I&apos;m not on the grind, you&apos;ll find me experimenting with coffee origins or street photography.
+          // when not on the grind, you&apos;ll find me experimenting with coffee origins or street photography.
         </p>
       </>
     </section>
