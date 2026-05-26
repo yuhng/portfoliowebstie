@@ -3,29 +3,29 @@
 import { useEffect, useRef } from "react"
 
 const activities = [
+    {
+    role: "Barista",
+    type: "Zerah Coffee Roasters",
+    period: "Febuary 2023 - Present",
+    description:
+      "Precision under pressure. Dialling in espresso ratios, managing rush-hour throughput, and strive in providing the best coffee experience ",
+    tags: ["Speciality Coffee", "Customer Experience", "Ops"],
+  },
   {
     role: "Data Analytics Club",
     type: "School",
     period: "September 24 — April 25",
     description:
-      "Driving data-driven projects and workshops for the student body. Led end-to-end analytics pipelines for club events and collaborated on inter-university case competitions.",
-    tags: ["Python", "Tableau", "SQL"],
-  },
-  {
-    role: "Barista",
-    type: "Zerah Coffee Roasters",
-    period: "Febuary 2023 - Present",
-    description:
-      "Precision under pressure. Dialling in espresso ratios, managing rush-hour throughput, and providing the best coffee experience ",
-    tags: ["Coffee", "Customer Experience", "Ops"],
+      "Driving data-driven projects and workshops that provided Healthcare Job Market and NYC Traffic insights",
+    tags: ["Python", "Tableau", "SQL", "Scikit-Learn", "Polars"],
   },
   {
     role: "Assistant Counselling Specialist",
     type: "SAF Counselling Centre",
     period: "March 21 - Febuary 23",
     description:
-      "Provided verbal counselling through the 24-hour SAF Counselling Hotline service to provide essential counselling support to distressed service personnel",
-    tags: ["Peer Support", "Communication", "Mental Health"],
+      "Performed verbal counselling through the 24-hour SAF Counselling Hotline service to provide essential counselling support to distressed service personnel",
+    tags: ["Peer Support", "Communication", "Psychology"],
   },
 ]
 
