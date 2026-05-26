@@ -50,7 +50,7 @@ export default function ExtracurricularActivities() {
     if (!ctx) return
 
     let animId: number
-    const NODE_COUNT = 25
+    const NODE_COUNT = 40
     const CONNECT_DIST = 120
     const ACCENT = "255,60,60"
     const MAX_ALPHA = 0.20
