@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import TopologyBackground from "@/components/TopologyBackground"
 
 const activities = [
     {
@@ -93,7 +94,8 @@ export default function ExtracurricularActivities() {
         }
       `}</style>
 
-      <section className="px-8 py-20 max-w-4xl mx-auto w-full">
+      <section className="px-8 py-20 max-w-4xl mx-auto w-full relative overflow-hidden">
+        <TopologyBackground nodeCount={25} maxEdgeAlpha={0.16} speedMultiplier={0.5} />
         <p className="font-mono text-accent text-xs tracking-widest mb-2">
           02 / beyond the desk
         </p>

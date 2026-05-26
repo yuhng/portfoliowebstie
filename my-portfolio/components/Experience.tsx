@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import TopologyBackground from "@/components/TopologyBackground"
 
 const experiences = [
   {
@@ -91,7 +92,8 @@ export default function Experience() {
         }
       `}</style>
 
-      <section className="px-8 py-20 max-w-4xl mx-auto w-full">
+    <section className="px-8 py-20 max-w-4xl mx-auto w-full relative overflow-hidden">
+      <TopologyBackground nodeCount={28} maxEdgeAlpha={0.18} speedMultiplier={0.5} />
         <p className="font-mono text-accent text-xs tracking-widest mb-2">01 / experience</p>
         <h2 className="text-2xl font-extrabold text-text mb-8">Where I&apos;ve worked</h2>
 
