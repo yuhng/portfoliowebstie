@@ -14,7 +14,7 @@ const activities = [
   },
   {
     role: "Data Analytics Club",
-    type: "campus",
+    type: "passion",
     org: "School",
     period: "September 24 — April 25",
     description:
