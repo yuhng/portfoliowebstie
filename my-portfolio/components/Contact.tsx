@@ -46,7 +46,7 @@ export default function Contact() {
       </div>
 
       <p className="font-mono text-xs text-muted mt-16">
-        © 2026 Your Name. built with next.js + vercel.
+        © 2026 Isaac. built with love and passion.
       </p>
     </section>
   )
