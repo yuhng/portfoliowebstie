@@ -104,7 +104,7 @@ export default function Hero() {
           ref={bioRef}
           className="font-mono text-sm text-text/80 mt-6 max-w-xl relative opacity-0 translate-y-2 transition-all duration-500 ease-out leading-relaxed"
         >
-          I am Isaac Tan, a data-driven Data Science student who loves transforming raw, complex data into automated cloud pipelines and high-impact analytics solutions.
+          Helllo ! I am Isaac, always chasing the 'Whys' and 'Hows' in every problem, driven to build intentional solutions.
         </p>
         
         <p className="font-mono text-xs text-accent mt-4 italic relative">
