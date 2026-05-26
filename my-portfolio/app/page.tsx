@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero"
+import Hero from "@/components/Hero_V2"
 import Skills from "@/components/Skills"
 import Experience from "@/components/Experience"
 import ExtracurricularActivities from "@/components/ExtracurricularActivities"
