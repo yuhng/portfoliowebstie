@@ -9,7 +9,7 @@ const activities = [
     period: "Febuary 2023 - Present",
     description:
       "Precision under pressure. Dialling in espresso ratios, managing rush-hour throughput, and strive in providing the best coffee experience ",
-    tags: ["Speciality Coffee", "Customer Experience", "Ops"],
+    tags: ["Speciality Coffee", "Customer Experience", "Hospitality"],
   },
   {
     role: "Data Analytics Club",
@@ -98,7 +98,7 @@ export default function ExtracurricularActivities() {
           02 / beyond the desk
         </p>
         <h2 className="text-2xl font-extrabold text-text mb-8">
-          Outside the grind
+          Outside of work
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

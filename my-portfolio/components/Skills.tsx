@@ -23,6 +23,10 @@ const skillGroups = [
     category: "Cloud Platforms",
     skills: ["AWS", "GCP", "Azure", "Databricks"],
   },
+  {
+    category: "Certifications",
+    skills: ["IBM AI Engineering", "dbt Fundamentals", "Databricks GenAI Fundamentals", "Google Advanced Data Analytics"],
+  },
 ]
 
 export default function Skills() {
