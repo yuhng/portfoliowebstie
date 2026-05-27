@@ -33,9 +33,9 @@ const activities = [
 ]
 
 const typeLabel: Record<string, string> = {
-  passion: "// passion",
-  craft: "// craft",
-  service: "// service",
+  passion: "// School",
+  craft: "// Zerah Coffee Roasters",
+  service: "// SAF Counselling Centre",
 }
 
 export default function ExtracurricularActivities() {

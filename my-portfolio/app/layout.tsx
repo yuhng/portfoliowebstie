@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import ScrollProgress from "@/components/ScrollProgress"
-import NavPills from "@/components/NavPills"
+import NavPillsClient from "@/components/NavPillsClient"
 
 export const metadata: Metadata = {
   title: "Tan Yu Hng, Isaac",
@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body>
         <ScrollProgress />
-        <NavPills />
+        <NavPillsClient />
         {children}
       </body>
     </html>
